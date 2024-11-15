@@ -9,4 +9,4 @@ spec:
     name: image-busybox
   policy:
     semver:
-      range: '>=1.2'
+      range: ">=1.2"
