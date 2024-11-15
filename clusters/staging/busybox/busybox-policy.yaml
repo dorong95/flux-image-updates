@@ -1,0 +1,12 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImagePolicy
+metadata:
+  name: image-busybox
+  namespace: flux-system
+spec:
+  imageRepositoryRef:
+    name: image-busybox
+  policy:
+    semver:
+      range: '>=1.2'

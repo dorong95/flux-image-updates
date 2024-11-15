@@ -1,0 +1,11 @@
+---
+apiVersion: image.toolkit.fluxcd.io/v1beta2
+kind: ImageRepository
+metadata:
+  name: image-busybox
+  namespace: flux-system
+spec:
+  image: ghcr.io/dorong95/busybox
+  interval: 5m0s
+  secretRef: # private 일 경우
+    name: registry-credentials
