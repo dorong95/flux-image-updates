@@ -11,7 +11,7 @@ spec:
     region: "us-east-2"
   providerRef:
     name: slack
-  eventSeverity: info
+  eventSeverity: error
   eventSources:
     - kind: GitRepository
       name: "*"
