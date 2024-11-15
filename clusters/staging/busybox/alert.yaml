@@ -10,10 +10,10 @@ spec:
     cluster: "my-cluster"
     region: "us-east-2"
   providerRef:
-    name: slack-bot
+    name: slack
   eventSeverity: info
   eventSources:
     - kind: GitRepository
-      name: '*'
+      name: "*"
     - kind: Kustomization
-      name: '*'
+      name: "*"
