@@ -16,7 +16,7 @@ spec:
         - name: registry-credentials
       containers:
         - name: pbusybox-autoimageupdate-c
-          image: ghcr.io/dorong95/busybox:1.0
+          image: ghcr.io/dorong95/busybox:1.0 # {"$imagepolicy": "flux-system:image-busybox"}
           command: ["sleep", "3600"]
           imagePullPolicy: IfNotPresent
           ports:
