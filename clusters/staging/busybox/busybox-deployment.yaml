@@ -12,6 +12,8 @@ spec:
       labels:
         app: busybox-autoimageupdate
     spec:
+      imagePullSecrets:
+        - name: registry-credentials
       containers:
         - name: pbusybox-autoimageupdate-c
           image: ghcr.io/dorong95/busybox:1.0
