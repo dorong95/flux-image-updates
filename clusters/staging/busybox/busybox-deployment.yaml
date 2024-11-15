@@ -17,6 +17,7 @@ spec:
       containers:
         - name: pbusybox-autoimageupdate-c
           image: ghcr.io/dorong95/busybox:1.0
+          command: ["sleep", "3600"]
           imagePullPolicy: IfNotPresent
           ports:
             - name: http
